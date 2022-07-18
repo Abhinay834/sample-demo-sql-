@@ -1,0 +1,25 @@
+"Welcome to sample demo on SQL database"
+mysql> create database sample;                              // Creating A Database
+Query OK, 1 row affected (0.01 sec)
+mysql> use sample;                                         // Use DataBase
+Database changed
+
+mysql> create table student_info(id int,name varchar(20),phone_number varchar(10));   // Create a Table With id,name,Ph_number
+Query OK, 0 rows affected (0.03 sec)
+mysql> describe student_info;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| id           | int         | YES  |     | NULL    |       |
+| name         | varchar(20) | YES  |     | NULL    |       |
+| phone_number | varchar(10) | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select * from student_info;
++------+------+--------------+
+| id   | name | phone_number |
++------+------+--------------+
+|    1 | sr   | 25666        |
++------+------+--------------+
+1 row in set (0.00 sec) 
